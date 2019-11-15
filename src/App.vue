@@ -1,18 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <v-app>
+    <header-component />
+
+    <v-content>
+      <v-container>
+        <general-input-component></general-input-component>
+      </v-container>
+    </v-content>
+
+    <footer-component />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import FooterComponent from "./components/FooterComponent";
+import HeaderComponent from "./components/HeaderComponent";
+import GeneralInputComponent from "./components/general/GeneralInput";
 
 export default {
   name: "app",
-  components: {
-    HelloWorld
-  }
+  components: { GeneralInputComponent, HeaderComponent, FooterComponent }
 };
 </script>
 
