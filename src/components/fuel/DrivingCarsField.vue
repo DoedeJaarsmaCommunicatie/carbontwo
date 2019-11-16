@@ -2,7 +2,7 @@
   <v-col cols="12" md="4">
     <v-text-field
       v-model="carDistance"
-      label="Is electricity produced by a diesel aggregate?"
+      label="How many kilometers for a car to drive do you expect?"
       outlined
       type="number"
     />
